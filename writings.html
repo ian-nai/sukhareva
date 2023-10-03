@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   </head>
+   </head>
+   <body>
+      <div class="header">
+         <h1>Grunya Sukhareva</h1>
+         <p>Highlighting the writings and contributions of Soviet child psychiatrist Grunya Sukhareva.</p>
+      </div>
+      <div class="sidenav">
+         <br />
+         <br />
+         <a href="index.html">Home</a>
+         <a href="writings.html">Sukhareva's Writings on Autism</a>
+         <a href="further_reading.html">Further Reading</a>
+         <a href="online_resources.html">Open Online Resources</a>
+         <a href="timeline.html">Timeline</a>
+         <a href="about.html">About</a>
+      </div>
+      <table>
+      <tr>
+         <div class="main">
+            <p>The writings below highlight Sukhareva's early writings on autism, originally published in both Russian and German. In addition to PDFs
+               (with searchable full text), translations into English conducted by Google Translate are also included. Please note that these translations
+               will contain imperfections due to the limitations of the translation software used, and should not be considered authoritative. For translations
+               by human translators (in copyright), please see the links below:
+            <ul>
+               <li><a href="https://search.lib.utexas.edu/permalink/01UTAU_INST/apl7st/cdi_crossref_primary_10_1007_BF00571671" target="_blank">Translation of  "Die schizoiden Psychopathien im Kindesalter," which appeared in 1926</a></li>
+               <li><a href="" target="_blank">Translation of "Die Besonderheiten der schizoiden Psychopathien bei den Mädchen", which appeared in 1927</a></li>
+            </ul>
+            </p>
+            <button type="button" id="russian" class="collapsible">Open the Original Russian Article from 1925, "Шизоидные психопатии в детском возрасте"</button>
+            <div class="content">
+               <h1>PDF Example by Object Tag</h1>
+               <object data="pdf/russian.pdf" type="application/pdf" width="100%" height="500px">
+                  <p>Unable to display PDF file. <a href="pdf/russian.pdf">Download</a> instead.</p>
+               </object>
+            </div>
+            <button class="collapsible" id="trans_button">Open the Computer Translation of Russian to English</button>
+            <div class="content">
+               <iframe src="https://docs.google.com/document/d/e/2PACX-1vQx7rJME5eBoMHOHI0r9yZSBU4LE8WClcqVoaqQO2zujxrjfhGIFhMy5BwogSLXYQ/pub?embedded=true" height="500" width="760"></iframe>
+               <p>Don't see the text? <a href="https://docs.google.com/document/d/e/2PACX-1vQx7rJME5eBoMHOHI0r9yZSBU4LE8WClcqVoaqQO2zujxrjfhGIFhMy5BwogSLXYQ/pub?embedded=true">View here instead.</a></p>
+            </div>
+         </div>
+      </tr>
+      <tr>
+         <div class="main">
+            <button type="button" id="russian" class="collapsible">Open the Original German Article from 1926, "Die schizoiden Psychopathien im Kindesalter"</button>
+            <div class="content">
+               <h1>PDF Example by Object Tag</h1>
+               <object data="pdf/german.pdf" type="application/pdf" width="100%" height="500px">
+                  <p>Unable to display PDF file. <a href="pdf/german.pdf">Download</a> instead.</p>
+               </object>
+            </div>
+            <button class="collapsible">Open the Computer Translation of "Die schizoiden..." to English</button>
+            <div class="content">
+               <iframe src="https://docs.google.com/document/d/e/2PACX-1vTu9zofO32yCVt3O0wGWwvXxHbXkclESep9idd3enR3bQ8vCNJmlKNfxFxYfyIiXA/pub?embedded=true" height="500" width="760"></iframe>
+               <p>Don't see the text? <a href="https://docs.google.com/document/d/e/2PACX-1vTu9zofO32yCVt3O0wGWwvXxHbXkclESep9idd3enR3bQ8vCNJmlKNfxFxYfyIiXA/pub?embedded=true">View here instead.</a></p>
+            </div>
+         </div>
+      </tr>
+      <tr>
+         <div class="main">
+            <button type="button" id="russian" class="collapsible">Open the Original German Article from 1927, "Die Besonderheiten der schizoiden Psychopathien bei den Mädchen"</button>
+            <div class="content">
+               <h1>PDF Example by Object Tag</h1>
+               <object data="pdf/german_2_madchen.pdf" type="application/pdf" width="100%" height="500px">
+                  <p>Unable to display PDF file. <a href="pdf/german_2_madchen.pdf">Download</a> instead.</p>
+               </object>
+            </div>
+            <button class="collapsible">Open the Computer Translation of "Die Besonderheiten..." to English</button>
+            <div class="content">
+               <iframe src="https://docs.google.com/document/d/e/2PACX-1vTCyYvTUSCmmWEJS3U3lzFBuLqlqUZ-JDSPO8-aGCmiJhIyLKjdtBDpFNdOZhho-08B_GNHO30LCMZc/pub?embedded=true" height="500" width="760"></iframe>
+               <p>Don't see the text? <a href="https://docs.google.com/document/d/e/2PACX-1vTCyYvTUSCmmWEJS3U3lzFBuLqlqUZ-JDSPO8-aGCmiJhIyLKjdtBDpFNdOZhho-08B_GNHO30LCMZc/pub?embedded=true">View here instead.</a></p>
+            </div>
+         </div>
+      </tr>
+   </body>
+</html>
+<script>
+   var coll = document.getElementsByClassName("collapsible");
+   var i;
+
+   for (i = 0; i < coll.length; i++) {
+     coll[i].addEventListener("click", function() {
+       this.classList.toggle("active");
+       var content = this.nextElementSibling;
+       if (content.style.maxHeight){
+         content.style.maxHeight = null;
+       } else {
+         content.style.maxHeight = content.scrollHeight + "px";
+       }
+     });
+   }
+</script>

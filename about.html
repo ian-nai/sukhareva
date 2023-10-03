@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   </head>
+   </head>
+   <body>
+      <div class="header">
+         <h1>Grunya Sukhareva</h1>
+         <p>Highlighting the writings and contributions of Soviet child psychiatrist Grunya Sukhareva.</p>
+      </div>
+      <div class="sidenav">
+         <br />
+         <br />
+         <a href="index.html">Home</a>
+         <a href="writings.html">Sukhareva's Writings on Autism</a>
+         <a href="further_reading.html">Further Reading</a>
+         <a href="online_resources.html">Open Online Resources</a>
+         <a href="timeline.html">Timeline</a>
+         <a href="about.html">About</a>
+      </div>
+      <div class="main">
+         <p>This website aims to make G.E. Sukhareva's work on autism research more widely known and accessible. By making information about her research
+            and life more readily accessible to the public and academic communities, we hope to honor and highlight her scientific legacy and contribution to the
+            history of autism.
+         </p>
+         <p>The site was created and is maintained by <a href="https://github.com/ian-nai/" target="_blank">Ian Goodale, European Studies Librarian at the University of Texas at Austin.</a></p>
+      </div>
+   </body>
+</html>
+<script>
+   var coll = document.getElementsByClassName("collapsible");
+   var i;
+
+   for (i = 0; i < coll.length; i++) {
+     coll[i].addEventListener("click", function() {
+       this.classList.toggle("active");
+       var content = this.nextElementSibling;
+       if (content.style.maxHeight){
+         content.style.maxHeight = null;
+       } else {
+         content.style.maxHeight = content.scrollHeight + "px";
+       }
+     });
+   }
+</script>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   </head>
+   </head>
+   <body>
+      <div class="header">
+         <h1>Grunya Sukhareva</h1>
+         <p>Highlighting the writings and contributions of Soviet child psychiatrist Grunya Sukhareva.</p>
+      </div>
+      <div class="sidenav">
+         <br />
+         <br />
+         <a href="index.html">Home</a>
+         <a href="writings.html">Sukhareva's Writings on Autism</a>
+         <a href="further_reading.html">Further Reading</a>
+         <a href="online_resources.html">Open Online Resources</a>
+         <a href="timeline.html">Timeline</a>
+         <a href="about.html">About</a>
+      </div>
+      <div class="main">
+         <p>Welcome! This website is about Grunya Efimovna Sukhareva, a pioneering researcher into autism. As the earliest known person to
+            document autism in children, her work has been instrumental to the understanding and study of autism within scientific literature.
+         </p>
+         <p>Please use the links to the left to explore the site's content, including Sukhareva's pioneering early research articles in Russian and German,
+            bibliographies of additional resources on her life and work, neurodiversity, and the history of autism, and a timeline of key moments in early autism research.
+         </p>
+         <br />
+         <center><img src="images/suchareva_headshot.jpg" alt="Portrait of G.E. Sukhareva" width="204" height="299" ></center>
+      </div>
+   </body>
+</html>
+<script>
+   var coll = document.getElementsByClassName("collapsible");
+   var i;
+
+   for (i = 0; i < coll.length; i++) {
+     coll[i].addEventListener("click", function() {
+       this.classList.toggle("active");
+       var content = this.nextElementSibling;
+       if (content.style.maxHeight){
+         content.style.maxHeight = null;
+       } else {
+         content.style.maxHeight = content.scrollHeight + "px";
+       }
+     });
+   }
+</script>
