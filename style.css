@@ -21,7 +21,7 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #b4c0cb;
+  background-color: #9099A2;
   overflow-x: hidden;
   padding-top: 20px;
 }
@@ -47,7 +47,7 @@ li{
 .header {
   padding: 20px;
   text-align: center;
-  background: #7e808f;
+  background: #646672;
   color: white;
   font-size: 20px;
 }
