@@ -21,7 +21,7 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #9099A2;
+  background-color: #4A3654; 
   overflow-x: hidden;
   padding-top: 20px;
 }
@@ -41,13 +41,13 @@ li{
 
 
 .sidenav a:hover {
-  color: #403e3e;
+  color: #A8ADA9;
 }
 
 .header {
   padding: 20px;
   text-align: center;
-  background: #646672;
+  background: #555862;
   color: white;
   font-size: 20px;
 }
